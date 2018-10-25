@@ -31,6 +31,7 @@ class Song
       # binding.pry
       self.send("#{property}=", value)
     end
+    self
   end
 
   def save
