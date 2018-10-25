@@ -28,8 +28,8 @@ class Song
   end
 
   def initialize(options={})
-    options.each do |property, value|
-      self.send("#{property}=", value)
+    options.each do |property, value, value_2|
+      self.send("#{property}=", value, value_2)
       binding.pry
     end
   end
